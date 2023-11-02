@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Player from '/Users/andersongh/pt-48-anderson-emmanuel-repructor-musica/src/Player.js';
+import Navbar from '/Users/andersongh/pt-48-anderson-emmanuel-repructor-musica/src/Navbar.js';
+import Footer from '/Users/andersongh/pt-48-anderson-emmanuel-repructor-musica/src/Footer.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (<>
+  <div className="principal-container">
+    <div className='app__container'>
+      <Navbar />
+      <Player />
+      <Footer />
     </div>
-  );
+    </div>
+  
+  </>
+    );
 }
 
 export default App;
